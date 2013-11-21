@@ -32,18 +32,18 @@ redbloodcell:: redbloodcell(){
 	mHDLcholesterol = 0;
 }
 
-}
-void bloodtest:: get(){
+
+void bloodTest:: get(){
 	cout<< "please select one of the following"<< endl;
 	cout<< "A physician"<< endl;
 	cout<< "B Radiologist"<< endl;
 	cout<< "nurse"<<endl;
 	cin>> "mAdmin";
 	cout<< "please enter the date"<<endl;
-	cin>> mdate;
+	cin>> mDate;
 	cout<< "please enter the time"<<endl;
-	cin>> mtime;
+	cin>> mTime;
 }
-void completebloodcout:: getCBC(){
+void completebloodcount:: getCBC(){
 
 }
