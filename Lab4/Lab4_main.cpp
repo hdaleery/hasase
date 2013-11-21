@@ -13,20 +13,12 @@
  *      Author: hameddaleeryan
  */
 
-#include "bloodtest.h"
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string.h>
-#include <iosfwd>
-#include "functions.hpp"
-using namesapace std;
-
+#include "bloodtest.hpp"
 
 		int main() {
 	int choose;
 	int i;
-}
+
 		// file opened here
 myfile.open;
 while(1) {

@@ -4,12 +4,9 @@
  *  Created on: Nov 21, 2013
  *      Author: hameddaleeryan
  */
-/*
- * bloodtest.h
- *
- *  Created on: Nov 12, 2013
- *      Author: hameddaleeryan
- */
+
+#ifndef BLOODTEST_HPP_
+#define BLOODTEST_HPP_
 
 #include <sys/select.h>
 #include <string>
@@ -19,11 +16,7 @@
 #include <string.h>
 #include <iosfwd>
 #include <time.h>
-#include "bloodtest.cpp"
 using namespace std;
-
-
-#define PATIENT_HPP_
 
 class bloodTest{
 private:
@@ -37,7 +30,7 @@ public:
 	void oppendToFile(string para);
 	void get();
 };
-class completebloodcount : public bloodtest
+class completebloodcount : public bloodtest{
 private:
 int mWhiteBlood, mredblood, mplatelet;
 string mgender;
@@ -52,7 +45,7 @@ class whitebloodcell : public bloodTest{
 private:
 	int mcalcium, mMagnesium, mChloride;
 public:
-	whitebloodsell();
+	whitebloodcell();
 	void getWhitebloodcell();
 	void testWhitebloodcell();
 
@@ -64,8 +57,7 @@ public:
 	void getRBC();
 	void testRBC();
 };
-#endif // PATIENT_HPP_
 
 
 
-
+#endif /* BLOODTEST_HPP_ */

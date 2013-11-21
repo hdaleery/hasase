@@ -5,21 +5,13 @@
  *      Author: hameddaleeryan
  */
 
-
-
-
-#include <iostream>
-#include <fstream>
-#include <sstream>
-#include <string.h>
-#include <iosfwd>
 #include "bloodtest.hpp"
-using namespace std;
 //constructor
 
-bloodTest:: bloodTest(){
+bloodTest:: bloodTest()
+{
 	madmin = "unknown";
-	mTIme = 0;
+	mTime = 0;
 	mDate = 0;
 
 }
