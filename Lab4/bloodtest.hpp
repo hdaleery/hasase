@@ -8,21 +8,21 @@
 #ifndef BLOODTEST_HPP_
 #define BLOODTEST_HPP_
 
-#include <sys/select.h>
-#include <string>
+//#include <sys/select.h>
+//#include <string>
 #include <iostream>
 #include <fstream>
-#include <sstream>
-#include <string.h>
-#include <iosfwd>
-#include <time.h>
+//#include <sstream>
+//#include <string.h>
+//#include <iosfwd>
+//#include <time.h>
 using namespace std;
 
 class bloodTest{
 private:
 	string madmin;
 	int mTime;
-	int mDAte;
+	int mDate;
 
 public:
 	bloodTest();
@@ -30,7 +30,7 @@ public:
 	void oppendToFile(string para);
 	void get();
 };
-class completebloodcount : public bloodtest{
+class completebloodcount : public bloodTest{
 private:
 int mWhiteBlood, mredblood, mplatelet;
 string mgender;

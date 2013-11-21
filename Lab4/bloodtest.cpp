@@ -45,5 +45,5 @@ void bloodtest:: get(){
 	cin>> mtime;
 }
 void completebloodcout:: getCBC(){
-	cout<<
+
 }
