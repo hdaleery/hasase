@@ -6,6 +6,8 @@
  */
 
 #include "bloodtest.hpp"
+using namespace std;
+
 //constructor
 
 bloodTest:: bloodTest()
@@ -17,11 +19,11 @@ bloodTest:: bloodTest()
 }
 completebloodcount:: completebloodcount(){
 	mgender = "unknown";
-	mwhiteblood = 0;
+	mWhiteBlood = 0;
 	mredblood = 0;
 	mplatelet = 0;
 }
-whitebloodcell:: whitevloodcell(){
+Whitebloodcell:: WhiteBoodcell(){
 	mcalcium = 0;
 	mchloride = 0;
 	mmagnesium = 0;
@@ -38,7 +40,7 @@ void bloodTest:: get(){
 	cout<< "A physician"<< endl;
 	cout<< "B Radiologist"<< endl;
 	cout<< "nurse"<<endl;
-	cin>> "mAdmin";
+	cin >> madmin;
 	cout<< "please enter the date"<<endl;
 	cin>> mDate;
 	cout<< "please enter the time"<<endl;
