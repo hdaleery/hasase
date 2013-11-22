@@ -23,12 +23,12 @@ completebloodcount:: completebloodcount(){
 	mredblood = 0;
 	mplatelet = 0;
 }
- void whitebloodcell:: whitebloodcell(){
+ whitebloodcell:: whitebloodcell(){
 	mcalcium = 0;
 	mChloride = 0;
 	mMagnesium = 0;
 }
- void redbloodcell:: redbloodcell(){
+  redbloodcell :: redbloodcell(){
 	mtotalcholesterol = 0;
 	mLDLcholesterol = 0;
 	mHDLcholesterol = 0;
@@ -46,18 +46,18 @@ void bloodTest:: get(){
 	cout<< "please enter the time"<<endl;
 	cin>> mTime;
 }
-void completebloodcount:: getCBC(){
+ void completebloodcount:: getCBC(){
 	cout<< "patient gender?"<<endl;
 	cin>> mgender;
-	cout<< "number of white blood cells count in million"<<endl;
+ 	cout<< "number of white blood cells count in million"<<endl;
 	cin>> mWhiteBlood;
 	cout<< "number of red blood cell in million"<<endl;
 	cin>> mredblood;
 	cout<<"the platelet value in million"<<endl;
 	cin>> mplatelet;
 }
-void completebloodcount :: testCBC(){
-	if(4500<=mwhiteblood<=10000){
+ void completebloodcount :: testCBC(){
+	if(4500<=mWhiteBlood<=10000){
 		cout<<"normal number of white blood cell"<<endl;
 	}
 		else if(mWhiteBlood<4500){
@@ -86,7 +86,7 @@ void completebloodcount :: testCBC(){
 		}
 	}
 
-	void redbloodcell :: getRBC(){
+void redbloodcell :: getredbloodcell(){
 
 		cout<<" enter total cholesterol level"<<endl;
 		cin>> mtotalcholesterol;
@@ -97,7 +97,7 @@ void completebloodcount :: testCBC(){
 
 	}
 
-	void redbloodcell :: TestRBC(){
+void	redbloodcell :: testRBC(){
 
 		if (mTotalCholesterol < 200 ){
 
@@ -149,7 +149,7 @@ void completebloodcount :: testCBC(){
 		}
 	}
 
-	void whitebloodcell :: getWBC(){
+ void whitebloodcell :: getWhitebloodcell(){
 
 		cout << "Enter the ionized calcium level in mg/dL "<<endl;
 		cin >> mCalcium;
@@ -162,7 +162,7 @@ void completebloodcount :: testCBC(){
 	}
 
 
-	void whitebloodcell :: testWBC(){
+void	whitebloodcell :: testWhitebloodcell(){
 
 		if (4.4 <= mCalcium <= 5.3 ){
 
@@ -204,8 +204,8 @@ void completebloodcount :: testCBC(){
 			cout << "the serum magnesium level is above normal ranges" <<endl;
 
 		}
-
 	}
 
+ }
 
 
