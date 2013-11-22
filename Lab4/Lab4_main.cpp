@@ -20,14 +20,15 @@
 	int i;
 	fstream myfile;
 		// file opened here
-myfile.open("");
+myfile.open("bloodtest.text");
 while(1) {
 	// call base function here
 	bloodTest callfunc;
 	callfunc.get();
 	completebloodcount callCBC;
-	WhiteBloodcellcount callWBC;
+	whitebloodcellcount callWBC;
 	redbloodcellcount callRBC;
+
 
 	// main menu
 	cout<< "select the blood type"<<endl;

@@ -8,14 +8,14 @@
 #ifndef BLOODTEST_HPP_
 #define BLOODTEST_HPP_
 
-//#include <sys/select.h>
+#include <sys/select.h>
 //#include <string>
 #include <iostream>
 #include <fstream>
-//#include <sstream>
-//#include <string.h>
-//#include <iosfwd>
-//#include <time.h>
+#include <sstream>
+#include <string.h>
+#include <iosfwd>
+#include <time.h>
 using namespace std;
 
 class bloodTest{
