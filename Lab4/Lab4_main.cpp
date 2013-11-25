@@ -26,8 +26,8 @@ while(1) {
 	bloodTest callfunc;
 	callfunc.get();
 	completebloodcount callCBC;
-	whitebloodcellcount callWBC;
-	redbloodcellcount callRBC;
+	whitebloodcell callWBC;
+	redbloodcell callRBC;
 
 
 	// main menu
@@ -41,7 +41,7 @@ while(1) {
 	switch(choose){
 	case 1:
 		callCBC.getCBC();
-		callCBC.testCBC();
+		callCBC.test();
 		// callfunc.opentofile
 		break;
 
@@ -54,10 +54,10 @@ while(1) {
 	callRBC.testRBC();
 	break;
 	case 4:
-		annotation;
+	extera annotation;
 		cout<<"wite your annotation"<<endl;
 		cin>> annotation;
-		breake;
+		break;
 
 	case 5:
 		i=0;

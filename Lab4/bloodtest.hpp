@@ -52,7 +52,7 @@ public:
 };
 class redbloodcell :public bloodTest{
 private:
-	int mtotalcholesterol, mLDLcholesterol, mHDLcholesterol;
+	int mTotalcholesterol, mLDLcholesterol, mHDLcholesterol;
 public:
 	void getRBC();
 	void testRBC();

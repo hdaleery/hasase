@@ -46,7 +46,7 @@ void bloodTest:: get(){
 	cout<< "please enter the time"<<endl;
 	cin>> mTime;
 }
- void completebloodcount:: getCBC(){
+ void completebloodcount :: getCBC(){
 	cout<< "patient gender?"<<endl;
 	cin>> mgender;
  	cout<< "number of white blood cells count in million"<<endl;
@@ -56,7 +56,7 @@ void bloodTest:: get(){
 	cout<<"the platelet value in million"<<endl;
 	cin>> mplatelet;
 }
- void completebloodcount :: testCBC(){
+  void completebloodcount :: test(){
 	if(4500<=mWhiteBlood<=10000){
 		cout<<"normal number of white blood cell"<<endl;
 	}
@@ -86,7 +86,7 @@ void bloodTest:: get(){
 		}
 	}
 
-void redbloodcell :: getredbloodcell(){
+void redbloodcell :: getRBC(){
 
 		cout<<" enter total cholesterol level"<<endl;
 		cin>> mtotalcholesterol;
@@ -95,9 +95,9 @@ void redbloodcell :: getredbloodcell(){
 		cout<<"enter the HDL cholesterol level"<<endl;
 		cin>> mHDLcholesterol;
 
-	}
+	};
 
-void	redbloodcell :: testRBC(){
+void redbloodcell :: testRBC(){
 
 		if (mTotalCholesterol < 200 ){
 
@@ -149,20 +149,20 @@ void	redbloodcell :: testRBC(){
 		}
 	}
 
- void whitebloodcell :: getWhitebloodcell(){
+ void whitebloodcell :: getWBC() {
 
-		cout << "Enter the ionized calcium level in mg/dL "<<endl;
-		cin >> mCalcium;
-		cout << "Enter the Serum cholride level in mEq/L"<<endl;
-		cin >> mChloride;
-		cout << "Enter the serum magnesium level in mg/dL "<<endl;
-		cin >> mMagnesium;
+		cout<< "Enter the ionized calcium level in mg/dL "<<endl;
+		cin>> mCalcium;
+		cout<< "Enter the Serum cholride level in mEq/L"<<endl;
+		cin>> mChloride;
+		cout<< "Enter the serum magnesium level in mg/dL "<<endl;
+		cin>> mMagnesium;
 
 
 	}
 
 
-void	whitebloodcell :: testWhitebloodcell(){
+void	whitebloodcell :: testWBC(){
 
 		if (4.4 <= mCalcium <= 5.3 ){
 
