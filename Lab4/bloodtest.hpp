@@ -43,7 +43,7 @@ void test();
 };
 class whitebloodcell : public bloodTest{
 private:
-	int mcalcium, mMagnesium, mChloride;
+	int mCalcium, mMagnesium, mChloride;
 public:
 	whitebloodcell();
 	void getWhitebloodcell();
@@ -54,14 +54,17 @@ class redbloodcell :public bloodTest{
 private:
 	int mTotalcholesterol, mLDLcholesterol, mHDLcholesterol;
 public:
+	redbloodcell();
 	void getRBC();
 	void testRBC();
 };
 
 class annotation : public bloodTest{
+private:
+	string annot;
 public:
 	void getannotation();
-	void setannotation();
+
 };
 
 

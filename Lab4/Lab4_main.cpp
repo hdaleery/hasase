@@ -35,7 +35,7 @@ while(1) {
 	completebloodcount callCBC;
 	whitebloodcell callWBC;
 	redbloodcell callRBC;
-	annotation callant;
+	annotation callannot;
 
 
 	// main menu
@@ -62,9 +62,8 @@ while(1) {
 	callRBC.testRBC();
 	break;
 	case 4:
-	 callant.getannotation();
-		cout<<"wite your annotation"<<endl;
-		cin>>getannotation;
+	 callannot.getannotation();
+
 		break;
 
 	case 5:

@@ -4,7 +4,14 @@
  *  Created on: Nov 21, 2013
  *      Author: hameddaleeryan
  */
-
+#include <sys/select.h>
+//#include <string>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string.h>
+#include <iosfwd>
+#include <time.h>
 #include "bloodtest.hpp"
 using namespace std;
 
@@ -24,15 +31,20 @@ completebloodcount:: completebloodcount(){
 	mplatelet = 0;
 }
  whitebloodcell:: whitebloodcell(){
-	mcalcium = 0;
+	mCalcium = 0;
 	mChloride = 0;
 	mMagnesium = 0;
 }
   redbloodcell :: redbloodcell(){
-	mtotalcholesterol = 0;
+	mTotalcholesterol = 0;
 	mLDLcholesterol = 0;
 	mHDLcholesterol = 0;
 }
+void  annotation:: getannotation(){
+	  string annot;
+	cout<<"please write your annotation";
+	getline(cin, annot);
+  }
 
 
 void bloodTest:: get(){
@@ -85,11 +97,12 @@ void bloodTest:: get(){
 			cout<<"platelet count is above normal range"<<endl;
 		}
 	}
+  }
 
 void redbloodcell::getRBC(){
 
 		cout<<" enter total cholesterol level"<<endl;
-		cin>> mtotalcholesterol;
+		cin>> mTotalcholesterol;
 		cout<<"enter the LDL cholesterol level"<<endl;
 		cin>> mLDLcholesterol;
 		cout<<"enter the HDL cholesterol level"<<endl;
@@ -99,57 +112,57 @@ void redbloodcell::getRBC(){
 
 void redbloodcell :: testRBC(){
 
-		if (mTotalCholesterol < 200 ){
+		if (mTotalcholesterol < 200 ){
 
 			cout << "the total Cholesterol level is desirable" <<endl;
 		}
-		else if( 200 <= mTotalCholesterol <= 239 ){
+		else if( 200 <= mTotalcholesterol <= 239 ){
 			cout << "Total cholesterol level is boarder line high" <<endl;
 
 		}
-		else if( mTotalCholesterol >= 240){
+		else if( mTotalcholesterol >= 240){
 
 			cout << "The total Cholesterol Level is High" <<endl;
 		}
 
 
-		if ( mLDLCholesterol < 100 ){
+		if ( mLDLcholesterol < 100 ){
 
 			cout << "The LDL cholesterol level is optimal" <<endl;
 		}
-		else if( 100 <= mLDLCholesterol <= 129 ){
+		else if( 100 <= mLDLcholesterol <= 129 ){
 			cout << "The LDL cholesterol is near optimal above optimal " <<endl;
 
 		}
-		else if(130 <= mLDLCholesterol <= 159){
+		else if(130 <= mLDLcholesterol <= 159){
 
 			cout << "The LDL Cholesterol level is boarder line high" <<endl;
 		}
 
-		else if (160<= mLDLCholesterol <= 189 ){
+		else if (160<= mLDLcholesterol <= 189 ){
 
 			cout << "The LDL Cholesterol level is high" <<endl;
 		}
-		else if ( mLDLCholesterol >= 190 ){
+		else if ( mLDLcholesterol >= 190 ){
 
 			cout << "The LDL Cholesterol level is above very high" <<endl;
 		}
 
-		if( mHDLCholesterol < 40 ){
+		if( mHDLcholesterol < 40 ){
 			cout << "HDL Cholesterol level is very low and there is a major risk of heart disease" <<endl;
 
 		}
-		else if( 40< mHDLCholesterol > 59){
+		else if( 40< mHDLcholesterol > 59){
 
 			cout << "HDL Cholesterol level is in a good range" <<endl;
 		}
-		else if( mHDLCholesterol > 60){
+		else if( mHDLcholesterol > 60){
 
 			cout << "HDL Cholesterol level is protective against heart disease" <<endl;
 		}
 	}
 
- void whitebloodcell :: getWBC() {
+ void whitebloodcell :: getWhitebloodcell() {
 
 		cout<< "Enter the ionized calcium level in mg/dL "<<endl;
 		cin>> mCalcium;
@@ -162,7 +175,7 @@ void redbloodcell :: testRBC(){
 	}
 
 
-void	whitebloodcell :: testWBC(){
+void	whitebloodcell :: testWhitebloodcell(){
 
 		if (4.4 <= mCalcium <= 5.3 ){
 
@@ -204,8 +217,7 @@ void	whitebloodcell :: testWBC(){
 			cout << "the serum magnesium level is above normal ranges" <<endl;
 
 		}
-	}
+}
 
-  }
 
-  void getannotation()
+
