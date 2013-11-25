@@ -12,9 +12,16 @@
  *  Created on: Nov 12, 2013
  *      Author: hameddaleeryan
  */
-
+#include <sys/select.h>
+//#include <string>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <string.h>
+#include <iosfwd>
+#include <time.h>
 #include "bloodtest.hpp"
-
+using namespace std;
 		int main() {
 	int choose;
 	int i;
@@ -28,6 +35,7 @@ while(1) {
 	completebloodcount callCBC;
 	whitebloodcell callWBC;
 	redbloodcell callRBC;
+	annotation callant;
 
 
 	// main menu
@@ -46,17 +54,17 @@ while(1) {
 		break;
 
 	case 2:
-		callWBC.getWBC();
-	    callWBC.test();
+		callWBC.getWhitebloodcell();
+	    callWBC.testWhitebloodcell();
 	  break;
-	case 3;
+	case 3:
 	callRBC.getRBC();
 	callRBC.testRBC();
 	break;
 	case 4:
-	extera annotation;
+	 callant.getannotation();
 		cout<<"wite your annotation"<<endl;
-		cin>> annotation;
+		cin>>getannotation;
 		break;
 
 	case 5:

@@ -86,7 +86,7 @@ void bloodTest:: get(){
 		}
 	}
 
-void redbloodcell :: getRBC(){
+void redbloodcell::getRBC(){
 
 		cout<<" enter total cholesterol level"<<endl;
 		cin>> mtotalcholesterol;
@@ -206,6 +206,6 @@ void	whitebloodcell :: testWBC(){
 		}
 	}
 
- }
+  }
 
-
+  void getannotation()

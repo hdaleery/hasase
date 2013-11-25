@@ -58,6 +58,12 @@ public:
 	void testRBC();
 };
 
+class annotation : public bloodTest{
+public:
+	void getannotation();
+	void setannotation();
+};
+
 
 
 #endif /* BLOODTEST_HPP_ */
